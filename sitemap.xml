@@ -1,1 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://kayantv.app/</loc></url><url><loc>https://kayantv.app/privacy</loc></url><url><loc>https://kayantv.app/terms</loc></url><url><loc>https://kayantv.app/legal</loc></url><url><loc>https://kayantv.app/copyright</loc></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://kayantv.app/</loc><lastmod>2026-09-17</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://kayantv.app/privacy</loc><lastmod>2026-09-17</lastmod><priority>0.5</priority></url>
+  <url><loc>https://kayantv.app/terms</loc><lastmod>2026-09-17</lastmod><priority>0.5</priority></url>
+  <url><loc>https://kayantv.app/copyright</loc><lastmod>2026-09-17</lastmod><priority>0.5</priority></url>
+</urlset>
