@@ -10,5 +10,5 @@ window.KAYAN_CONFIG = {
     { name: "Android TV", status: "Coming soon", href: "/android-tv-iptv-player" },
     { name: "Windows", status: "Planned", href: "/windows-iptv-player" }
   ],
-  legalNotice: "The full first-launch legal notice will be added here verbatim before launch."
+  legalNotice: "Kayan TV is a media player. It provides no channels or subscriptions. You are responsible for every source you connect."
 };
