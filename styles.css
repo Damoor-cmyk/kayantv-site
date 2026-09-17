@@ -207,6 +207,7 @@ h1, h2, h3, p { margin-top: 0; }
 /* Legal and policy pages */
 .container .nav { min-height: 74px; }
 .page { max-width: 820px; padding: 72px 0; }
+.page h1 { margin-bottom: 28px; }
 .page h2 { margin-top: 40px; letter-spacing: -.035em; }
 .page p, .page li { color: var(--muted); }
 .page a { color: var(--cyan); }
