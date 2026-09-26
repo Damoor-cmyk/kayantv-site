@@ -216,6 +216,89 @@ h1, h2, h3, p { margin-top: 0; }
 .footer-inner nav { display: flex; flex-wrap: wrap; gap: 20px; }
 .footer-inner a { color: #a9bbd1; text-decoration: none; }
 
+/* Kayan Remote */
+.remote-page { background: radial-gradient(circle at 80% 6%, rgba(117, 86, 255, .17), transparent 28%), var(--bg); }
+.remote-header { background: rgba(5, 9, 20, .84); }
+.remote-hero { display: grid; grid-template-columns: .88fr 1.12fr; align-items: center; gap: 72px; padding: 92px 0 100px; }
+.remote-product-label { display: inline-flex; align-items: center; gap: 11px; margin-bottom: 31px; color: #f3f6ff; font-size: 1.12rem; font-weight: 820; letter-spacing: -.04em; }
+.remote-product-label img { width: 50px; height: 50px; border-radius: 14px; box-shadow: 0 13px 32px rgba(103, 86, 255, .24); }
+.remote-product-label b, .related-product h2 em { color: #a88cff; font-style: normal; }
+.remote-hero h1 { max-width: 680px; margin: 0; font-size: clamp(4rem, 7vw, 7.15rem); line-height: .91; letter-spacing: -.075em; }
+.remote-hero h1 em { font-style: normal; background: linear-gradient(105deg, var(--cyan), #778cff 66%, #b56cff); background-clip: text; -webkit-background-clip: text; color: transparent; }
+.remote-hero-copy > p:not(.eyebrow):not(.remote-hero-note) { max-width: 630px; margin: 29px 0; color: #adbed3; font-size: 1.08rem; line-height: 1.75; }
+.remote-hero-actions { display: flex; flex-wrap: wrap; gap: 11px; }
+.remote-hero-note { max-width: 600px; margin: 24px 0 0; color: #8497b0; font-size: .77rem; }
+.remote-visual { position: relative; min-height: 570px; overflow: hidden; display: grid; place-items: center; border: 1px solid rgba(131, 145, 255, .36); border-radius: 31px; background: radial-gradient(circle at 80% 8%, rgba(76, 210, 244, .16), transparent 25%), radial-gradient(circle at 15% 65%, rgba(138, 84, 255, .24), transparent 35%), #091225; box-shadow: var(--shadow); isolation: isolate; }
+.remote-visual::before { content: ""; position: absolute; inset: 0; z-index: -1; opacity: .43; background: linear-gradient(rgba(255,255,255,.027) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.027) 1px, transparent 1px); background-size: 42px 42px; mask-image: linear-gradient(115deg, #000, transparent 75%); }
+.remote-tv { position: absolute; top: 59px; right: 38px; width: 70%; min-height: 322px; padding: 15px; border: 7px solid #151b2a; border-radius: 19px; background: #07101d; box-shadow: 0 34px 80px rgba(0,0,0,.42); transform: perspective(900px) rotateY(-9deg) rotateX(2deg); }
+.remote-tv::after { content: ""; position: absolute; left: 50%; bottom: -26px; width: 27%; height: 18px; transform: translateX(-50%); border-radius: 0 0 7px 7px; background: #151b2a; }
+.remote-tv-glow { position: absolute; inset: 0; border-radius: 12px; background: radial-gradient(circle at 78% 32%, rgba(51, 214, 255, .38), transparent 20%), linear-gradient(135deg, #112944, #1a1c5c 57%, #42205f); }
+.remote-tv-top, .remote-tv-dock { position: relative; z-index: 1; display: flex; align-items: center; gap: 8px; color: #cfddf5; font-size: .61rem; }
+.remote-tv-top span:last-child { margin-left: auto; color: #8ff0d1; }
+.remote-status-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--teal); box-shadow: 0 0 11px var(--teal); }
+.remote-tv-screen { position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: end; min-height: 195px; margin: 12px 0; padding: 22px; border: 1px solid rgba(255,255,255,.12); border-radius: 10px; background: linear-gradient(90deg, rgba(4,12,31,.87), rgba(5,11,32,.13)); }
+.remote-tv-screen span { max-width: 220px; font-size: 1.52rem; font-weight: 810; line-height: 1.04; letter-spacing: -.055em; }
+.remote-tv-screen small { margin-top: 8px; color: #bbcae4; font-size: .63rem; }
+.remote-tv-dock { gap: 12px; color: #92a7c6; }
+.remote-tv-dock span:first-child { color: #fff; }
+.remote-phone { position: absolute; left: 8%; bottom: 18px; width: 245px; padding: 13px 14px 16px; border: 7px solid #151926; border-radius: 37px; background: linear-gradient(165deg, #101a2c, #060b15); box-shadow: 0 28px 65px rgba(0,0,0,.55); transform: rotate(-5deg); }
+.remote-phone-top { display: flex; justify-content: space-between; padding: 0 4px 8px; color: #d8e1f1; font-size: .59rem; }
+.remote-phone-app { display: flex; align-items: center; gap: 7px; padding: 7px 2px 12px; color: #f7f9ff; font-size: .66rem; font-weight: 780; }
+.remote-phone-app img { width: 27px; height: 27px; border-radius: 8px; }
+.remote-phone-app i { margin-left: auto; color: var(--teal); font-size: .49rem; }
+.remote-device { padding: 10px; border-radius: 10px; background: rgba(139, 109, 255, .17); color: #edf1ff; font-size: .63rem; font-weight: 720; }
+.remote-device small { display: block; margin-top: 2px; color: #9ef2d1; font-size: .52rem; font-weight: 600; }
+.remote-pad { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; place-items: center; margin: 17px auto; width: 158px; }
+.remote-pad span { display: grid; place-items: center; width: 42px; height: 36px; border: 1px solid rgba(183, 202, 242, .16); border-radius: 10px; background: #141d2e; color: #d9e8ff; font: inherit; font-size: .83rem; }
+.remote-pad span:first-child { grid-column: 2; }
+.remote-pad span:nth-child(5) { grid-column: 2; }
+.remote-pad .remote-select { border-color: rgba(51, 205, 245, .55); background: linear-gradient(145deg, #197cb4, #4d58bb); color: #fff; font-size: .58rem; font-weight: 820; }
+.remote-shortcuts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 7px; }
+.remote-shortcuts span { display: grid; place-items: center; min-height: 32px; border-radius: 8px; background: #111a29; color: #d1dcef; font-size: .85rem; }
+.remote-visual > p { position: absolute; right: 17px; bottom: 12px; margin: 0; color: #aabbd4; font-size: .59rem; }
+
+.related-product { padding: 62px 0; background: linear-gradient(110deg, rgba(113, 75, 255, .11), rgba(10, 19, 36, .08)); }
+.remote-callout { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 29px; padding: 29px; border: 1px solid rgba(143, 123, 255, .3); border-radius: 27px; background: radial-gradient(circle at 17% 10%, rgba(126, 90, 255, .15), transparent 29%), rgba(12, 20, 37, .78); }
+.remote-callout-icon img { width: 94px; height: 94px; border-radius: 25px; box-shadow: 0 17px 43px rgba(120, 86, 255, .23); }
+.remote-callout .eyebrow { margin-bottom: 8px; color: #baabff; }
+.remote-callout h2 { margin: 0; font-size: clamp(2rem, 3.5vw, 3.5rem); line-height: .98; letter-spacing: -.06em; }
+.remote-callout p:not(.eyebrow) { max-width: 650px; margin: 13px 0 0; color: var(--muted); font-size: .86rem; }
+.remote-callout .button { white-space: nowrap; }
+
+.remote-compatibility { background: #07101d; }
+.tv-brand-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.tv-brand-grid article { min-height: 245px; padding: 30px; border: 1px solid var(--line); border-radius: 22px; background: linear-gradient(145deg, rgba(21, 34, 54, .88), rgba(7, 13, 24, .86)); }
+.tv-brand-mark { display: inline-flex; align-items: center; min-height: 34px; padding: 0 11px; border: 1px solid var(--line-strong); border-radius: 9px; color: #dcecff; font-size: .73rem; font-weight: 820; letter-spacing: .03em; }
+.android-mark { color: #b8f4c8; background: rgba(65, 178, 96, .12); }
+.lg-mark { color: #ffc0d5; background: rgba(193, 43, 95, .1); }
+.samsung-mark { color: #badcff; background: rgba(42, 127, 255, .1); font-size: .62rem; letter-spacing: .1em; }
+.tv-brand-grid h3 { margin: 78px 0 10px; font-size: 1.25rem; line-height: 1.1; letter-spacing: -.035em; }
+.tv-brand-grid p { margin: 0; color: var(--muted); font-size: .83rem; }
+.compatibility-note { max-width: 810px; margin: 24px 0 0; color: #7e91aa; font-size: .74rem; }
+
+.remote-features { background: linear-gradient(145deg, #091527, #050914 72%); }
+.remote-feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.remote-feature-grid article { min-height: 260px; padding: 28px; border: 1px solid var(--line); border-radius: 21px; background: rgba(255,255,255,.018); }
+.remote-feature-icon { display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid rgba(68, 201, 246, .3); border-radius: 12px; color: var(--cyan); background: rgba(44, 143, 237, .09); font-size: 1.12rem; }
+.remote-feature-grid h3 { margin: 75px 0 9px; font-size: 1.2rem; letter-spacing: -.035em; }
+.remote-feature-grid p, .remote-capability-row p { margin: 0; color: var(--muted); font-size: .82rem; }
+.remote-capability-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px; }
+.remote-capability-row > div { display: grid; grid-template-columns: 42px 1fr; gap: 13px; padding: 24px; border: 1px solid rgba(121, 104, 255, .24); border-radius: 20px; background: linear-gradient(145deg, rgba(65, 61, 129, .12), rgba(10, 19, 36, .35)); }
+.remote-capability-row b { display: block; margin: 2px 0 7px; font-size: .94rem; }
+
+.remote-how { background: #07101d; }
+.remote-how-grid { display: grid; grid-template-columns: .83fr 1.17fr; gap: 100px; align-items: start; }
+.remote-how-grid h2 { margin: 0; font-size: clamp(2.85rem, 5.1vw, 5.1rem); line-height: .98; letter-spacing: -.06em; }
+.remote-how-grid > div > p:last-child { max-width: 490px; margin: 25px 0 0; color: var(--muted); }
+.remote-steps { display: grid; gap: 0; padding: 0; margin: 0; list-style: none; border-top: 1px solid var(--line); }
+.remote-steps li { display: grid; grid-template-columns: 65px 1fr; gap: 16px; padding: 24px 0; border-bottom: 1px solid var(--line); }
+.remote-steps span { color: var(--cyan); font-size: .68rem; font-weight: 820; letter-spacing: .1em; }
+.remote-steps b { font-size: 1.05rem; }
+.remote-steps p { margin: 5px 0 0; color: var(--muted); font-size: .84rem; }
+.remote-availability { background: radial-gradient(circle at 80% 5%, rgba(131, 89, 255, .15), transparent 29%), #07101d; }
+.remote-faq { background: #050914; }
+
+
 @media (max-width: 1030px) {
   .home-hero h1, .platform-hero h1 { font-size: clamp(3.7rem, 8.8vw, 6.3rem); }
   .value-grid { grid-template-columns: 1fr 1fr; }
@@ -224,6 +307,8 @@ h1, h2, h3, p { margin-top: 0; }
   .platform-intro-grid { gap: 50px; }
   .shot-card { min-height: 475px; }
   .shot-card.image-card img { min-height: 475px; }
+  .remote-hero { grid-template-columns: .85fr 1.15fr; gap: 42px; }
+  .remote-how-grid { gap: 58px; }
 }
 
 @media (max-width: 780px) {
@@ -260,6 +345,17 @@ h1, h2, h3, p { margin-top: 0; }
   .footer-brand { grid-column: 1 / -1; }
   .footer-bottom { display: block; }
   .footer-bottom span { display: block; margin-top: 8px; }
+  .remote-hero { grid-template-columns: 1fr; gap: 42px; padding: 62px 0 75px; }
+  .remote-hero h1 { font-size: clamp(3.35rem, 15vw, 5.2rem); }
+  .remote-visual { min-height: 510px; }
+  .remote-callout { grid-template-columns: auto 1fr; }
+  .remote-callout .button { grid-column: 1 / -1; justify-self: start; }
+  .tv-brand-grid { grid-template-columns: 1fr; }
+  .tv-brand-grid article { min-height: 205px; }
+  .tv-brand-grid h3 { margin-top: 45px; }
+  .remote-feature-grid { grid-template-columns: 1fr 1fr; }
+  .remote-capability-row, .remote-how-grid { grid-template-columns: 1fr; }
+  .remote-how-grid { gap: 43px; }
 }
 
 @media (max-width: 480px) {
@@ -310,6 +406,33 @@ h1, h2, h3, p { margin-top: 0; }
   .footer-top { grid-template-columns: 1fr; }
   .footer-brand { grid-column: auto; }
   .footer-inner { flex-direction: column; }
+  .remote-hero { padding: 45px 0 56px; }
+  .remote-product-label { margin-bottom: 25px; }
+  .remote-hero h1 { font-size: clamp(2.75rem, 13vw, 3.35rem); line-height: .96; letter-spacing: -.058em; }
+  .remote-hero-copy > p:not(.eyebrow):not(.remote-hero-note) { margin: 22px 0; font-size: 1rem; line-height: 1.62; }
+  .remote-hero-actions .button { width: 100%; }
+  .remote-visual { min-height: 423px; border-radius: 21px; }
+  .remote-tv { top: 37px; right: 13px; width: 79%; min-height: 253px; padding: 11px; border-width: 5px; }
+  .remote-tv-screen { min-height: 145px; padding: 15px; }
+  .remote-tv-screen span { font-size: 1.15rem; }
+  .remote-phone { left: 5%; bottom: 12px; width: 194px; padding: 9px 10px 11px; border-width: 5px; border-radius: 28px; }
+  .remote-phone-top { padding-bottom: 3px; }
+  .remote-phone-app { padding-bottom: 7px; }
+  .remote-device { padding: 7px; }
+  .remote-pad { width: 135px; gap: 5px; margin: 11px auto; }
+  .remote-pad span { width: 35px; height: 29px; border-radius: 8px; }
+  .remote-shortcuts span { min-height: 27px; }
+  .remote-visual > p { display: none; }
+  .related-product { padding: 45px 0; }
+  .remote-callout { grid-template-columns: 1fr; gap: 18px; padding: 24px; }
+  .remote-callout-icon img { width: 72px; height: 72px; border-radius: 20px; }
+  .remote-callout .button { width: 100%; justify-self: stretch; }
+  .remote-feature-grid { grid-template-columns: 1fr; }
+  .remote-feature-grid article { min-height: 205px; }
+  .remote-feature-grid h3 { margin-top: 47px; }
+  .remote-capability-row > div { grid-template-columns: 36px 1fr; padding: 20px; }
+  .remote-feature-icon { width: 36px; height: 36px; border-radius: 10px; font-size: .95rem; }
+  .remote-steps li { grid-template-columns: 45px 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {
